@@ -1,38 +1,68 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bot-collection-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bot-card {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px;
+  max-width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bot-card img {
+  max-width: 100%;
+}
+
+.bot-army-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.army-card {
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 10px;
+  max-width: 200px;
+}
+
+.army-card img {
+  max-width: 100%;
+}
+
+.sort-bar-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.sort-bar-container h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.sort-bar-container select {
+  font-size: 14px;
+  padding: 5px;
 }
